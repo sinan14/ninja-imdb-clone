@@ -1,5 +1,5 @@
 export const xyafafa = '7b75b220';
-export const apiUrl = `http://www.omdbapi.com/`;
+export const apiUrl = `https://www.omdbapi.com/`;
 
 // OMDb API: http://www.omdbapi.com/?i=tt21276878&apikey=7b75b220
 
