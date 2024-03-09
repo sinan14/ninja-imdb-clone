@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   searchInput.addEventListener('keyup', function (e) {
     const value = e.target.value;
-    console.log(value, '  ', value.length);
+    // console.log(value, '  ', value.length);
     // added this special condition because it returns too many results error when tried with less than 3 characters
     if (value.length >= 3) {
       searchByKeyword(value);
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   async function searchByKeyword(searchKey) {
     try {
       const url = `${apiUrl}?s=${searchKey}&page=1&apikey=${xyafafa}`;
-
+      console.log(url);
       const response = await fetch(url);
       if (!response.ok) {
         throw Error('response is not okay');
