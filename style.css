@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: rgb(1, 1, 41);
+  color: #fff;
+  /* font-family: Arial, sans-serif; */
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 13rem;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.logo {
+  background-color: rgb(245, 197, 24);
+  color: #000;
+  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: -1px;
+}
+.logo-first_part {
+  font-weight: 900;
+}
+.logo-second_part {
+  font-weight: 800;
+}
+.search-box {
+  margin-top: 9rem;
+}
+.input-wrapper {
+  margin: 0 30%;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+}
+.search-input {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.border-24 {
+  border-radius: 2.4rem;
+}
+.border-20 {
+  border-radius: 2rem;
+}
+
+.search-input::placeholder {
+  text-align: center;
+  margin-left: 2rem;
+}
+.btn-search {
+  position: absolute;
+  background: transparent;
+  top: 1.2rem;
+  right: 5%;
+  border: none;
+  height: 3.2rem;
+}
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-bottom: 1rem;
+}
+.suggestion-item .data {
+  width: 52rem;
+  display: inline-block;
+}
+.without-link-style:visited,
+.without-link-style:active,
+.without-link-style:link {
+  color: #000;
+  text-decoration: none;
+}
+/* .without-link-style-white:visited,
+.without-link-style-white:active,
+.without-link-style-white:link {
+  color: #fff !important;
+} */
+.without-link-style-white {
+  color: white !important;
+}
+.suggestion-item .data span {
+  display: inline-block;
+}
+
+.suggestion-item:first-child {
+  margin-top: 1rem;
+}
+.suggestion-item:last-child {
+  padding-bottom: 1rem;
+}

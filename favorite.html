@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .empty-screen {
+        margin: 9rem auto 0;
+        max-width: 66rem;
+        text-align: center;
+        display: none;
+      }
+      .empty-msg {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+      }
+      .btn-create {
+        border: none;
+        background: orange;
+        padding: 1.6rem 1.2rem;
+        border-radius: 1rem;
+      }
+      .favorite-movies_list {
+        width: 60rem;
+        margin: 2rem auto 0;
+        display: none;
+      }
+      .movie-item {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+        padding: 4px 6px;
+        background-color: #8d2bd5;
+      }
+
+      .poster-box {
+        width: 6rem;
+      }
+      .movie-data {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.4rem 0;
+      }
+      .action-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .movie-item .btn-create {
+        color: #fff;
+        padding: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-box">
+        <p class="logo">
+          <a class="without-link-style" href="index.html">
+            <span class="logo-first_part">IMD</span
+            ><span class="logo-second_part">b</span>
+          </a>
+        </p>
+      </div>
+
+      <ul class="header-nav-list">
+        <li>Favorites</li>
+        <li>Sign In</li>
+        <li>En</li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="empty-screen">
+        <p class="empty-msg">NO FAVORITE MOVIES TO SHOW</p>
+        <button class="btn-create">
+          <a
+            class="without-link-style without-link-style-white"
+            href="index.html"
+          >
+            CREATE YOUR FAVORITES
+          </a>
+        </button>
+      </div>
+      <ul class="favorite-movies_list"></ul>
+    </div>
+    <script type="module" src="./js/favorite.js"></script>
+  </body>
+</html>

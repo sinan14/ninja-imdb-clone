@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-box">
+        <p class="logo">
+          <a class="without-link-style" href="#">
+            <span class="logo-first_part">IMD</span
+            ><span class="logo-second_part">b</span>
+          </a>
+        </p>
+      </div>
+
+      <ul class="header-nav-list">
+        <li>
+          <a
+            class="without-link-style without-link-style-white"
+            href="favorite.html"
+            >Favorites</a
+          >
+        </li>
+        <li>Sign In</li>
+        <li>En</li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="search-box">
+        <div class="input-wrapper border-20">
+          <input
+            class="search-input border-24"
+            type="text"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="true"
+            aria-autocomplete="list"
+            placeholder="Search IMDb"
+          />
+          <ul id="suggestions-list" class="suggestions-list">
+            <!-- <li class="suggestion-item">
+              <span class="data">
+                <span class="suggestion-item_title">Rise of the Black Bat</span>
+                <span class="suggestion-item_year">- 2012</span>
+              </span>
+              <span class="make-fvrt-frm-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="ipc-icon ipc-icon--star-border-inline"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  role="presentation"
+                >
+                  <path
+                    d="M22.724 8.217l-6.786-.587-2.65-6.22c-.477-1.133-2.103-1.133-2.58 0l-2.65 6.234-6.772.573c-1.234.098-1.739 1.636-.8 2.446l5.146 4.446-1.542 6.598c-.28 1.202 1.023 2.153 2.09 1.51l5.818-3.495 5.819 3.509c1.065.643 2.37-.308 2.089-1.51l-1.542-6.612 5.145-4.446c.94-.81.45-2.348-.785-2.446zm-10.726 8.89l-5.272 3.174 1.402-5.983-4.655-4.026 6.141-.531 2.384-5.634 2.398 5.648 6.14.531-4.654 4.026 1.402 5.983-5.286-3.187z"
+                  ></path>
+                </svg>
+              </span>
+            </li> -->
+          </ul>
+          <button id="suggestionSearchButton" class="btn-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="ipc-icon ipc-icon--magnify"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              role="presentation"
+            >
+              <path fill="none" d="M0 0h24v24H0V0z"></path>
+              <path
+                d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/home.js"></script>
+  </body>
+</html>

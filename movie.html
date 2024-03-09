@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie details</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .movie-data-box {
+        width: 60rem;
+        height: auto;
+        margin: 2rem auto 0;
+        color: #fff;
+        text-align: center;
+      }
+      .heading-primary {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+      }
+      .heading-secondary,
+      .other-data {
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+        font-size: 1.8rem;
+      }
+      .details-wrapper {
+        display: flex;
+        gap: 1rem;
+      }
+      .details-box {
+        text-align: left;
+      }
+      .normal-text {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      .plot-box {
+        text-align: center;
+        margin-top: 1rem;
+        width: 60rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-box">
+        <p class="logo">
+          <a class="without-link-style" href="index.html">
+            <span class="logo-first_part">IMD</span
+            ><span class="logo-second_part">b</span>
+          </a>
+        </p>
+      </div>
+
+      <ul class="header-nav-list">
+        <li>
+          <a
+            class="without-link-style without-link-style-white"
+            href="favorite.html"
+            >Favorites</a
+          >
+        </li>
+        <li>Sign In</li>
+        <li>En</li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="movie-data-box">
+        <h1 class="heading-primary">Batman Begins</h1>
+        <div class="details-wrapper">
+          <div class="movie-poster-box">
+            <img
+              class="movie-poster"
+              src="https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+              alt="movie poster"
+            />
+          </div>
+          <div class="details-box">
+            <p class="other-data release">
+              Released: <span class="normal-text">15 Jun 2005</span>
+            </p>
+            <p class="other-data imdbRating">
+              imdbRating: <span class="normal-text">8.2</span>
+            </p>
+            <p class="other-data genre">
+              Genre: <span class="normal-text">Action, Crime, Drama</span>
+            </p>
+            <p class="other-data country">
+              Country:
+              <span class="normal-text">United States, United Kingdom</span>
+            </p>
+            <p class="other-data language">
+              Language: <span class="normal-text">English, Mandarin</span>
+            </p>
+            <p class="other-data actors">
+              Actors:
+              <span class="normal-text actors"
+                >Christian Bale, Michael Caine, Ken Watanabe</span
+              >
+            </p>
+            <p class="other-data director">
+              Director:
+              <span class="normal-text">Christopher Nolan</span>
+            </p>
+            <p class="other-data writer">
+              Writer:
+              <span class="normal-text"
+                >Bob Kane, David S. Goyer, Christopher Nolan</span
+              >
+            </p>
+            <p class="other-data awards">
+              Awards:
+              <span class="normal-text"
+                >Nominated for 1 Oscar. 14 wins & 79 nominations total</span
+              >
+            </p>
+            <p class="other-data runtime">
+              Runtime:
+              <span class="normal-text"
+                >Nominated for 1 Oscar. 14 wins & 79 nominations total</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="plot-box">
+          <h2 class="heading-secondary">Plot</h2>
+          <p class="movie-plot">
+            After witnessing his parents' death, Bruce learns the art of
+            fighting to confront injustice. When he returns to Gotham as Batman,
+            he must stop a secret society that intends to destroy the city.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/movieDetails.js"></script>
+  </body>
+</html>
