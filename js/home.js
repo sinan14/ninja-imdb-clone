@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   searchInput.addEventListener('keyup', function (e) {
     const value = e.target.value;
-    // console.log(value, '  ', value.length);
     // added this special condition because it returns too many results error when tried with less than 3 characters
     if (value.length >= 3) {
       searchByKeyword(value);
@@ -101,8 +100,4 @@ document.addEventListener('DOMContentLoaded', function () {
     movies.push(movie);
     localStorage.setItem('FAVORITE_MOVIES', JSON.stringify(movies));
   }
-
-  // for (const movie of searchResults.Search) {
-  //   populateSuggestionList(movie);
-  // }
 });

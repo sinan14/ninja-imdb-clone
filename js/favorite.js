@@ -1,12 +1,3 @@
-// {
-//   Title: 'Bat Masterson',
-//   Year: '1958–1961',
-//   imdbID: 'tt0052445',
-//   Type: 'series',
-//   Poster:
-//     'https://m.media-amazon.com/images/M/MV5BYzg5Y2E3ZGUtODhmNS00ZjgzLWIwODEtZjY0ODNlZjFkZWJiXkEyXkFqcGdeQXVyMTMzNzIyNDc1._V1_SX300.jpg',
-// },
-
 //! start update dom after only content is loaded safer
 document.addEventListener('DOMContentLoaded', function () {
   loadData();
