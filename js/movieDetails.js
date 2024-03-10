@@ -1,4 +1,4 @@
-import { xyafafa, apiUrl } from './constants.js';
+import { omdbValue, apiUrl } from './constants.js';
 
 let movieData = {
   Title: 'N/A',
@@ -26,7 +26,7 @@ async function loadData() {
     const Poster = urlParams.get('Poster');
     const Title = urlParams.get('Title');
     const Year = urlParams.get('Year');
-    console.log(movieId, Poster, Title, Year);
+
     // show the available data to user till original data loaded since loader is not implemented
     movieData = {
       ...movieData,
@@ -36,7 +36,7 @@ async function loadData() {
     };
 
     showData();
-    const url = `${apiUrl}?i=${movieId}&apikey=${xyafafa}`;
+    const url = `${apiUrl}?i=${movieId}&apikey=${omdbValue}`;
     const response = await fetch(url);
     if (!response.ok) {
       throw Error('response is not okay');

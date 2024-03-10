@@ -1,4 +1,4 @@
-import { xyafafa, apiUrl } from './constants.js';
+import { omdbValue, apiUrl } from './constants.js';
 document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.querySelector('.search-input');
   const suggestionList = document.querySelector('#suggestions-list');
@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   async function searchByKeyword(searchKey) {
     try {
-      const url = `${apiUrl}?s=${searchKey}&page=1&apikey=${xyafafa}`;
-      console.log(url);
+      const url = `${apiUrl}?s=${searchKey}&page=1&apikey=${omdbValue}`;
       const response = await fetch(url);
       if (!response.ok) {
         throw Error('response is not okay');
